@@ -6,11 +6,11 @@
 #    By: gchamore <gchamore@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/18 15:24:00 by gchamore          #+#    #+#              #
-#    Updated: 2024/09/23 16:23:47 by gchamore         ###   ########.fr        #
+#    Updated: 2024/09/23 16:23:39 by gchamore         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = zombie
+NAME = zombieHorde
 
 CC = c++
 
@@ -18,7 +18,7 @@ CFLAGS = -g -Wall -Wextra -Werror -std=c++98
 
 RM = rm -rf
 
-SRCS = main.cpp newZombie.cpp randomChump.cpp Zombie.cpp
+SRCS = main.cpp zombieHorde.cpp Zombie.cpp
 
 OBJ_DIR = objs
 
@@ -66,7 +66,7 @@ $(ORANGE)██████╗██████╗ ██████╗      �
 ╚██████╗██║     ██║         ╚██████╔╝ ██║
  ╚═════╝╚═╝     ╚═╝          ╚═════╝  ╚═╝$(RESET) 
 
-$(YELLOW)EX 00$(RESET)
+$(YELLOW)EX 01$(RESET)
 endef
 export FIRST_HEADER
 

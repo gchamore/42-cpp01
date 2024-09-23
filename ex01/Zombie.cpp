@@ -6,7 +6,7 @@
 /*   By: gchamore <gchamore@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 11:27:55 by gchamore          #+#    #+#             */
-/*   Updated: 2024/09/23 16:22:42 by gchamore         ###   ########.fr       */
+/*   Updated: 2024/09/23 16:32:26 by gchamore         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +14,28 @@
 
 Zombie::Zombie(std::string name): _name(name) 
 {
-	std::cout << "new " << Zombie::_name << std::endl;
+	std::cout << "new zombie " << Zombie::_name << std::endl;
 	return;
 }
+
 Zombie::Zombie( void )
 {
-	std::cout << "new " << Zombie::_name << std::endl;
+	std::cout << "new zombie " << Zombie::_name << std::endl;
 	return;
 }
 
 Zombie::~Zombie(void)
 {
-	std::cout << "remove " << Zombie::_name << std::endl;
+	std::cout << "remove zombie " << Zombie::_name << std::endl;
 	return;
 }
 
-void Zombie::announce( void )
+void Zombie::announce( void ) const
 {
 	std::cout << Zombie::_name << ": BraiiiiiiinnnzzzZ..." << std::endl;
+}
+
+void Zombie::setName(std::string name)
+{
+    _name = name;
 }
