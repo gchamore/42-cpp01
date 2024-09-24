@@ -6,19 +6,19 @@
 #    By: gchamore <gchamore@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/18 15:24:00 by gchamore          #+#    #+#              #
-#    Updated: 2024/09/24 14:38:22 by gchamore         ###   ########.fr        #
+#    Updated: 2024/09/24 14:37:12 by gchamore         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = zombie
+NAME = Violence_inutile
 
 CC = c++
 
-CFLAGS = -g -Wall -Wextra -Werror -std=c++98
+CFLAGS = -g -Wall -Wextra -Werror -std=c++98 -MMD
 
 RM = rm -rf
 
-SRCS = main.cpp newZombie.cpp randomChump.cpp Zombie.cpp
+SRCS = main.cpp Weapon.cpp HumanA.cpp HumanB.cpp
 
 OBJ_DIR = objs
 
@@ -66,7 +66,7 @@ $(ORANGE)██████╗██████╗ ██████╗      �
 ╚██████╗██║     ██║         ╚██████╔╝ ██║
  ╚═════╝╚═╝     ╚═╝          ╚═════╝  ╚═╝$(RESET) 
 
-$(YELLOW)EX 00$(RESET)
+$(YELLOW)EX 03$(RESET)
 endef
 export FIRST_HEADER
 
