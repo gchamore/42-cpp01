@@ -1,24 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   newZombie.cpp                                      :+:      :+:    :+:   */
+/*   Harl.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gchamore <gchamore@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/23 11:27:52 by gchamore          #+#    #+#             */
-/*   Updated: 2024/09/25 12:03:46 by gchamore         ###   ########.fr       */
+/*   Created: 2024/09/23 11:27:57 by gchamore          #+#    #+#             */
+/*   Updated: 2024/09/24 16:41:17 by gchamore         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#ifndef ZOMBIE_HPP
+# define ZOMBIE_HPP
 
-Zombie* newZombie( std::string name )
-{
-	try {
-        return new Zombie(name);
-    } catch (const std::bad_alloc& e)
-	{
-        std::cerr << "Allocation failed: " << e.what() << std::endl;
-        return nullptr;
-    }
-}
+#include <iostream>
+#include <string>
+#include <sstream>
+
+class Harl {
+	
+public:
+	Harl(void);
+	~Harl(void);
+
+	void complain( std::string level );
+
+private:
+	void _debug( void );
+	void _info( void );
+	void _warning( void );
+	void _error( void );
+};
+
+#endif
