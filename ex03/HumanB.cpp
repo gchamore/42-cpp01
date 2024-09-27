@@ -6,7 +6,7 @@
 /*   By: gchamore <gchamore@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 16:45:38 by gchamore          #+#    #+#             */
-/*   Updated: 2024/09/24 14:16:34 by gchamore         ###   ########.fr       */
+/*   Updated: 2024/09/27 12:45:48 by gchamore         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ HumanB::~HumanB(void)
 void HumanB::setWeapon(Weapon& weapon)
 {
     this->_weapon = &weapon;
-	// std::cout << _name << " finally get this weapon - "<< this->_weapon->getType() << " - from the stock" << std::endl;
+	std::cout << _name << " finally get this weapon - "<< this->_weapon->getType() << " - from the stock" << std::endl;
 	return;
 }
 

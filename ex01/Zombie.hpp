@@ -6,7 +6,7 @@
 /*   By: gchamore <gchamore@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 11:27:57 by gchamore          #+#    #+#             */
-/*   Updated: 2024/09/23 15:32:18 by gchamore         ###   ########.fr       */
+/*   Updated: 2024/09/27 13:51:06 by gchamore         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@
 #include <string>
 #include <sstream>
 
-class Zombie {
-	
+class Zombie
+{
 public:
 	Zombie(std::string name);
 	Zombie(void);
@@ -26,7 +26,6 @@ public:
 
 	void announce() const;
     void setName(std::string name);
-	
 private:
 	std::string _name;
 };

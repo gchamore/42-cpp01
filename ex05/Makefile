@@ -6,7 +6,7 @@
 #    By: gchamore <gchamore@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/09/18 15:24:00 by gchamore          #+#    #+#              #
-#    Updated: 2024/09/24 16:41:56 by gchamore         ###   ########.fr        #
+#    Updated: 2024/09/27 12:42:48 by gchamore         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = harl
 
 CC = c++
 
-CFLAGS = -g -Wall -Wextra -Werror -std=c++98
+CFLAGS = -g -Wall -Wextra -Werror -std=c++98 -MMD
 
 RM = rm -rf
 

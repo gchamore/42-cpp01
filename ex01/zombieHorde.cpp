@@ -6,7 +6,7 @@
 /*   By: gchamore <gchamore@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 11:27:50 by gchamore          #+#    #+#             */
-/*   Updated: 2024/09/23 16:30:43 by gchamore         ###   ########.fr       */
+/*   Updated: 2024/09/27 13:51:24 by gchamore         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@ Zombie* zombieHorde(int N, std::string name)
 {
     Zombie* horde = new Zombie[N];
 
-    for (int i = 0; i < N; ++i) {
+    for (int i = 0; i < N; ++i)
+	{
         horde[i].setName(name);
     }
     return horde;
