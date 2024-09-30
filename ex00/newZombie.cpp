@@ -6,7 +6,7 @@
 /*   By: gchamore <gchamore@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/23 11:27:52 by gchamore          #+#    #+#             */
-/*   Updated: 2024/09/25 12:03:46 by gchamore         ###   ########.fr       */
+/*   Updated: 2024/09/30 11:09:41 by gchamore         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,13 @@
 
 Zombie* newZombie( std::string name )
 {
-	try {
+	try
+	{
         return new Zombie(name);
-    } catch (const std::bad_alloc& e)
+    }
+	catch (const std::bad_alloc& e)
 	{
         std::cerr << "Allocation failed: " << e.what() << std::endl;
-        return nullptr;
+        return NULL;
     }
 }
