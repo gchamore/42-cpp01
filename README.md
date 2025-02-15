@@ -115,6 +115,7 @@ Ce module vise à renforcer la compréhension des concepts fondamentaux de **C++
 1. **Cloner le dépôt** :
   ```bash
   git clone https://github.com/ton-repo/cpp01.git
+  cd cpp01
   ```
 
 **Exercice 00** : 
